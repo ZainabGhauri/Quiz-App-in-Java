@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="javafxapplication2.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="475.0" fitWidth="832.0" layoutX="-34.0" layoutY="-22.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@time.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#193044" height="265.0" layoutX="29.0" layoutY="157.0" opacity="0.06" stroke="BLACK" strokeType="INSIDE" width="741.0" />
+      <Label layoutX="27.0" layoutY="24.0" prefHeight="116.0" prefWidth="718.0" text="   2. What is another word for lexicon?">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="q1opta" layoutX="67.0" layoutY="187.0" mnemonicParsing="false" onAction="#CorrectAnsq2" onMousePressed="#CorrectAnsq2" prefHeight="106.0" prefWidth="423.0" text="A. DICTIONARY">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="q1optc" layoutX="67.0" layoutY="303.0" mnemonicParsing="false" onAction="#wrongAnsq2" onMousePressed="#wrongAnsq2" prefHeight="106.0" prefWidth="423.0" text="C. THESIS">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="scorelabel" layoutX="595.0" layoutY="168.0" prefHeight="48.0" prefWidth="114.0" text="Score :" textFill="#dd1212">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="qslabel" layoutX="568.0" layoutY="216.0" prefHeight="48.0" prefWidth="161.0" text="Question Left : " textFill="#dd1212">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+         <graphic>
+            <Label fx:id="lifelabel" prefHeight="48.0" prefWidth="148.0" text="Life Remaining :" textFill="#dd1212">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+         </graphic>
+      </Label>
+      <Label fx:id="anslabelq1" layoutX="304.0" layoutY="385.0" prefHeight="48.0" prefWidth="339.0" text="Your Answer is :" textFill="#dd1212">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

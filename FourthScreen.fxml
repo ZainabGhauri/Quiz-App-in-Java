@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="475.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="475.0" fitWidth="845.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@time.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c4b67" height="94.0" layoutX="43.0" layoutY="60.0" opacity="0.07" stroke="BLACK" strokeType="INSIDE" width="788.0" />
+      <Label fx:id="anslabelq1" layoutX="236.0" layoutY="403.0" prefHeight="48.0" prefWidth="339.0" text="Your Answer is :" textFill="#dd1212">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="b5" layoutX="679.0" layoutY="403.0" mnemonicParsing="false" onAction="#Lifelineq4" onMouseClicked="#Lifelineq4" prefHeight="35.0" prefWidth="113.0" text="LifeLine" textFill="RED">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="qslabel" layoutX="679.0" layoutY="14.0" prefHeight="48.0" prefWidth="133.0" text="Question Left : 0" textFill="#fff200">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="51.0" prefHeight="113.0" prefWidth="769.0" text="  4. Where would you find the Sea of Tranquility? ">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="q1optc" layoutX="82.0" layoutY="281.0" mnemonicParsing="false" onAction="#CorrectAnsq4" onMousePressed="#CorrectAnsq4" prefHeight="86.0" prefWidth="226.0" text="PLANET">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="q1optb" layoutX="390.0" layoutY="182.0" mnemonicParsing="false" onAction="#CorrectAnsq4" onMousePressed="#CorrectAnsq4" prefHeight="85.0" prefWidth="190.0" text="SUN">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="q1optd" layoutX="390.0" layoutY="281.0" mnemonicParsing="false" onAction="#CorrectAnsq4" onMousePressed="#CorrectAnsq4" prefHeight="86.0" prefWidth="288.0" text="ASTERIOD">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="q1opta" layoutX="82.0" layoutY="182.0" mnemonicParsing="false" onAction="#CorrectAnsq4" onMousePressed="#CorrectAnsq4" prefHeight="86.0" prefWidth="226.0" text="MOON">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="submitQ1" layoutX="551.0" layoutY="403.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="113.0" text="Submit Ans" textFill="RED">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

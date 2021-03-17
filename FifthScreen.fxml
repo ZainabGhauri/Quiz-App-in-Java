@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="485.0" fitWidth="854.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@time.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c4b67" height="94.0" layoutX="33.0" layoutY="58.0" opacity="0.17" stroke="BLACK" strokeType="INSIDE" width="788.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#193044" height="271.0" layoutX="33.0" layoutY="186.0" opacity="0.18" stroke="BLACK" strokeType="INSIDE" width="788.0" />
+      <Label fx:id="anslabelq1" layoutX="246.0" layoutY="413.0" prefHeight="48.0" prefWidth="339.0" text="Your Answer is :" textFill="#dd1212">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="b5" layoutX="689.0" layoutY="413.0" mnemonicParsing="false" onAction="#Lifelineq5" onMouseClicked="#Lifelineq5" prefHeight="35.0" prefWidth="113.0" text="LifeLine" textFill="RED">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="qslabel" layoutX="679.0" layoutY="14.0" prefHeight="48.0" prefWidth="133.0" text="Question Left : 6" textFill="#fff30c">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="q1optd" layoutX="414.0" layoutY="313.0" mnemonicParsing="false" onAction="#wrongAnsq5" onMousePressed="#wrongAnsq5" prefHeight="106.0" prefWidth="423.0" text="D. CHARLES DARWIN">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="q1optc" layoutX="51.0" layoutY="313.0" mnemonicParsing="false" onAction="#wrongAnsq5" onMousePressed="#wrongAnsq5" prefHeight="106.0" prefWidth="423.0" text="C.  ARISTOTLE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="q1optb" layoutX="427.0" layoutY="197.0" mnemonicParsing="false" onAction="#wrongAnsq5" onMousePressed="#wrongAnsq5" prefHeight="106.0" prefWidth="423.0" text="B. WILLIAM SON">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="q1opta" layoutX="51.0" layoutY="197.0" mnemonicParsing="false" onAction="#CorrectAnsq5" onMousePressed="#CorrectAnsq5" prefHeight="106.0" prefWidth="423.0" text="A.  LOUIS PASTEUR ">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="59.0" layoutY="58.0" prefHeight="113.0" prefWidth="769.0" text="5. Who invented the rabies vaccine ?">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitQ1" layoutX="553.0" layoutY="413.0" mnemonicParsing="false" onAction="#CorrectAnsq5" onMouseClicked="#CorrectAnsq5" prefHeight="35.0" prefWidth="113.0" text="Submit Ans" textFill="RED">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

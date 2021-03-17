@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="488.0" prefWidth="642.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="javafxapplication2.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="579.0" fitWidth="704.0" layoutX="-25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Quiz2.jpg" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="instruction" layoutX="149.0" layoutY="151.0" mnemonicParsing="false" onAction="#InstructionScreen" onMouseClicked="#InstructionScreen" onMousePressed="#InstructionScreen" prefHeight="39.0" prefWidth="266.0" text="INSTRUCTIONS" textFill="#cd3636">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="quit" layoutX="149.0" layoutY="298.0" mnemonicParsing="false" onAction="#QuitScreenDisplay" onMouseClicked="#QuitScreenDisplay" onMousePressed="#QuitScreenDisplay" prefHeight="39.0" prefWidth="266.0" text="QUIT" textFill="#b72d2d">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="b3" layoutX="149.0" layoutY="224.0" mnemonicParsing="false" onAction="#GameStart" onMousePressed="#GameStart" prefHeight="39.0" prefWidth="266.0" text="START GAME" textFill="#cd3636">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

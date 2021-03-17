@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="656.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="734.0" fitWidth="959.0" layoutX="-46.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Quiz2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="168.0" layoutY="201.0" prefHeight="181.0" prefWidth="427.0" text="Thankyou For Visiting" textAlignment="RIGHT" textFill="#e81e1e" wrapText="true">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="72.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="353.0" prefHeight="144.0" prefWidth="466.0" text="QUIZ WORLD !" textFill="#e3a32b" underline="true">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="69.0" />
+         </font>
+      </Label>
+      <Button fx:id="b4" layoutX="676.0" layoutY="581.0" mnemonicParsing="false" onAction="#end" onMouseClicked="#end" text="END" textAlignment="CENTER" textFill="#cf1f1f">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
